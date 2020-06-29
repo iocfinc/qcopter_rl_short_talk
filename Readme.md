@@ -64,17 +64,17 @@ reward = -10*np.tanh(.01*gap_) + 0.001*res_vel + (1000*np.tanh(1/(0.00001+abs(se
 
 ### **Response curve of the reward components**
 <p align="center">
-  <img width="750" height="750" src="./Images/6232020-Gap distance response.png"><br>
+  <img width="750" height="750" src="./6232020-Gap distance response.png"><br>
   <b>The intuition here is that we want to close the gap so that we **minimize** the punishment from having a significant gap in distance between the current position and desired position.</b>
 </p>
 
 <p align="center">
-  <img width="750" height="750" src="./Images/6232020-vel response.png"><br>
+  <img width="750" height="750" src="./6232020-vel response.png"><br>
   <b>For velocity, we want it to be high such that the agent would favour action vs inaction (~0 velocities).</b>
 </p>
 
 <p align="center">
-  <img width="750" height="750" src="./Images/6232020-Pose response.png"><br>
+  <img width="750" height="750" src="./6232020-Pose response.png"><br>
   <b>Finally, we want to maximize the reward by minimizing the absolute difference between the actual position and the desired position. It works in conjunction with Gap Distance.</b>
 </p>
 
